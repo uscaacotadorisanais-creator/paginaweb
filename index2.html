@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegancia y Moda</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head >
+<body>
+
+  <header class="header" >
+    <div class="logo">
+       <img src="log.png" alt="E&M Elegancia y Moda" class="logo-img">
+      <h1>Elegancia & Moda</h1>
+    </div>
+    <nav class="nav">
+      <a href="#home">Inicio</a>
+      <a href="#mujer">Mujer</a>
+      <a href="#hombre">Hombre</a>
+      <a href="#ninos">Niños</a>
+      <a href="#contacto">Contacto</a>
+      <span class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="carrito-contador">0</span></span>
+    </nav>
+  </header>
+
+<section id="home" class="portada">
+  <h2>Elegancia & Moda</h2>
+  <p>Estilo que define a toda la familia</p>
+  <button  onclick="scrollToSection('mujer')"s>Comprar Ahora</button>
+</section>
+  <!-- Sección Mujer -->
+  <section id="mujer" class="category">
+    <h2>Moda Mujer</h2>
+    <p>Colección exclusiva 2025</p>
+
+    <div class="products">
+      <div class="product-item">
+        <img src="polera.jpg" alt="Casaca Mujer">
+        <h3>Polera Mujer</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 55.00</p>
+        <button onclick="agregarAlCarrito('Polera Mujer', 55.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="casaca.png" alt="Casaca Mujer">
+        <h3>Casaca Mujer</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 70.00</p>
+        <button onclick="agregarAlCarrito('Casaca Mujer', 70.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="camisa.png" alt="Casaca Mujer">
+        <h3>Camisa de Cuadros</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 45.00</p>
+        <button onclick="agregarAlCarrito('Camisa de Cuadros', 45.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="pole.png" alt="Casaca Mujer">
+        <h3>Polera sin Capucha</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 62.00</p>
+        <button onclick="agregarAlCarrito('Polera sin Capucha', 62.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="chaqueta.png" alt="Casaca Mujer">
+        <h3>Chaqueta Ligera con Capucha</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 76.00</p>
+        <button onclick="agregarAlCarrito('Chaqueta Ligera con Capucha', 76.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="chaleco.png" alt="Casaca Mujer">
+        <h3>Chaleco tejido</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 45.90</p>
+        <button onclick="agregarAlCarrito('Chaleco tejido', 45.90)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="sudadera.png" alt="Casaca Mujer">
+        <h3>Sudadera con Capucha</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 59.90</p>
+        <button onclick="agregarAlCarrito('Sudadera con Capucha', 59.90)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="cam.png" alt="Casaca Mujer">
+        <h3>Chaleco con Camisa</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 79.90</p>
+        <button onclick="agregarAlCarrito('Chalecco con Camisa', 79.90)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="panta.png" alt="Casaca Mujer">
+        <h3>Pantalones vaqueros</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 89.00</p>
+        <button onclick="agregarAlCarrito('Pantalones vaqueros',89.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="can.png" alt="Casaca Mujer">
+        <h3>Pantalon cargo</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 67.90</p>
+        <button onclick="agregarAlCarrito('Pantalon cargo', 67.90)">Agregar al carrito</button>
+      </div>
+  </section>
+
+  <!-- Sección Hombre -->
+  <section id="hombre" class="category">
+    <h2>Moda Hombre</h2>
+    <p >Colección exclusiva 2025</p>
+    <div class="products">
+    <div class="product-item">
+        <img src="ropa1.png" alt="Casaca Mujer">
+        <h3>Chaqueta de beibol</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 63.00</p>
+        <button onclick="agregarAlCarrito('Chaqueta de beisbol', 63.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa2.png" alt="Casaca Mujer">
+        <h3>Chaqueta de algodon</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 60.00</p>
+        <button onclick="agregarAlCarrito('Chaqueta de algodon', 60.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa3.png" alt="Casaca Mujer">
+        <h3>Chaqueta de beisbol</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 76.00</p>
+        <button onclick="agregarAlCarrito('Chaqueta de beisbol', 76.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa4.png" alt="Casaca Mujer">
+        <h3>Chaqueta casual</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 65.00</p>
+        <button onclick="agregarAlCarrito('Chaqueta casual', 65.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa5.png" alt="Casaca Mujer">
+        <h3>Camiseta casual</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 40.00</p>
+        <button onclick="agregarAlCarrito('Camiseta casual', 40.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa6.png" alt="Casaca Mujer">
+        <h3>Camiseta manga corta</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 40.00</p>
+        <button onclick="agregarAlCarrito('Camiseta manga corta', 40.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa7.png" alt="Casaca Mujer">
+        <h3>Camiseta grafica</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 44.00</p>
+        <button onclick="agregarAlCarrito('Camiseta grafica', 40.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa8.png" alt="Casaca Mujer">
+        <h3>Pantalon a cuadros</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 62.00</p>
+        <button onclick="agregarAlCarrito('Pantalon a cuadros', 62.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa9.png" alt="Casaca Mujer">
+        <h3>Pantalon holgados</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 53.00</p>
+        <button onclick="agregarAlCarrito('Pantalon holgado', 53.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa10.png" alt="Casaca Mujer">
+        <h3>Vaquero casual</h3>
+        <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+        <p>S/ 81.00</p>
+        <button onclick="agregarAlCarrito('Vaquero casual', 81.00)">Agregar al carrito</button>
+      </div>
+
+  </section>
+
+  <!-- Sección Niños -->
+  <section id="ninos" class="category">
+    <h2>Moda Niños</h2>
+    <p>Colección exclusiva 2025</p>
+    <div class="products">
+    <div class="product-item">
+        <img src="ropa11.png" alt="Casaca Mujer">
+        <h3>Conjunto de verano</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 68.90</p>
+        <button onclick="agregarAlCarrito('Conjunto de verano', 68.90)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa12.png" alt="Casaca Mujer">
+        <h3>Conjunto de verano</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 67.00</p>
+        <button onclick="agregarAlCarrito('Conjunto verano', 67.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa13.png" alt="Casaca Mujer">
+        <h3>Conjunto de verano</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 68.00</p>
+        <button onclick="agregarAlCarrito('Conjunto de verano', 88.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa14.png" alt="Casaca Mujer">
+        <h3>Chamara de algodon</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 75.00</p>
+        <button onclick="agregarAlCarrito('Chamara de algodon', 75.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa15.png" alt="Casaca Mujer">
+        <h3>Polera con Capucha</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 34.00</p>
+        <button onclick="agregarAlCarrito('Polera con Capucha', 34.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa16.png" alt="Casaca Mujer">
+        <h3>Psntalon a cuadros</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 40.90</p>
+        <button onclick="agregarAlCarrito('Pantalon de cuadros', 40.90)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa17.png" alt="Casaca Mujer">
+        <h3>Comjunto de Pijama</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 75.90</p>
+        <button onclick="agregarAlCarrito('Conjunto de Pijama', 75.90)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa18.png" alt="Casaca Mujer">
+        <h3>Conjunto de invierno</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 89.90</p>
+        <button onclick="agregarAlCarrito('Conjunto de invierno', 89.90)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa19.png" alt="Casaca Mujer">
+        <h3>Pijama de Batman</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 90.00</p>
+        <button onclick="agregarAlCarrito('Pijama de Batman', 90.00)">Agregar al carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="ropa20.png" alt="Casaca Mujer">
+        <h3>Pantones de algodon</h3>
+        <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+        <p>S/ 55.00</p>
+        <button onclick="agregarAlCarrito('Pantalones de algodon', 55.00)">Agregar al carrito</button>
+      </div>
+
+  </section>
+<div id="carrito" class="carrito">
+  <h2>🛒 Mi Carrito</h2>
+
+  <ul id="carrito-items" class="carrito-lista"></ul>
+
+  <div class="carrito-total">
+    <span>Total:</span>
+    <strong>S/ <span id="carrito-total">0.00</span></strong>
+  </div>
+
+  <div class="carrito-botones">
+    <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar</button>
+<button class="btn-comprar" onclick="comprarPorWhatsApp()">Comprar</button>
+  </div>
+</div>
+
+  
+<footer id="contacto" class="contacto">
+  <div class="contacto-content">
+    <h2>Contáctanos</h2>
+    <p class="contacto-text">
+      Estamos disponibles para atenderte
+    </p>
+
+    <div class="contactos">
+
+      <a href="https://wa.me/51995820986" target="_blank" class="contactoson2">
+        <span class="contact-icon">💬</span>
+        <span class="contact-name">WhatsApp</span>
+      </a>
+
+      <a href="https://www.tiktok.com/@modayelegancia9" target="_blank" class="contactoson2">
+        <span class="contact-icon">🎵</span>
+        <span class="contact-name">TikTok</span>
+      </a>
+
+    </div>
+
+    <span class="footer-line"></span>
+
+    <p class="footer-copy">
+      &copy; 2025 Elegancia & Moda · Todos los derechos reservados
+    </p>
+  </div>
+</footer>
+ <script src="script.js"></script>
+</body>
+</html>
